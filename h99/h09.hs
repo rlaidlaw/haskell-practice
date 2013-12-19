@@ -3,7 +3,7 @@
 --     Put repeated series of duplicate elements in separate sublists.
 
 pack :: Eq a => [a] -> [[a]]
-pack []     = []
-pack [x]    = [[x]]
-pack (x:xs) = fst b : pack (snd b)
-  where b = break (/= x) xs
+pack []      = []
+pack [x]     = [[x]]
+pack l@(x:_) = fst b : pack (snd b)
+  where b = break (/= x) l
