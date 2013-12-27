@@ -9,7 +9,7 @@ listLength (_:xs) = 1 + listLength xs
 -- Alternative solution using tail-recursive helper function.
 
 listLength' :: [a] -> Integer
-listLength' l = listLengthTail l 0
+listLength' xs = listLengthTail xs 0
 
 listLengthTail :: [a] -> Integer -> Integer
 listLengthTail [] n     = n

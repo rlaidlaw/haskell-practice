@@ -3,4 +3,4 @@
 
 reverseList :: [a] -> [a]
 reverseList [] = []
-reverseList l  = last l : reverseList (init l)
+reverseList xs = last xs : reverseList (init xs)

@@ -5,5 +5,5 @@
 pack :: Eq a => [a] -> [[a]]
 pack []      = []
 pack [x]     = [[x]]
-pack l@(x:_) = fst b : pack (snd b)
-  where b = break (/= x) l
+pack xs@(x:_) = fst b : pack (snd b)
+  where b = break (/= x) xs

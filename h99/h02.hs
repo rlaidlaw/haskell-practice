@@ -13,4 +13,4 @@ lastButOne (_:xs)     = lastButOne xs
 lastButOne' :: [a] -> a
 lastButOne' []     = error "empty list"
 lastButOne' (_:[]) = error "list only contains one item"
-lastButOne' list   = head (tail (reverse list))
+lastButOne' xs     = head (tail (reverse xs))
