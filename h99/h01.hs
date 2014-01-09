@@ -10,5 +10,5 @@ findLast (_:xs) = findLast xs
 -- Alternative solution.
 
 findLast' :: [a] -> a
-findLast' []   = error "empty list"
-findLast' list = head (reverse list)
+findLast' [] = error "empty list"
+findLast' xs = head (reverse xs)
